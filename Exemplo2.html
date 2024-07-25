@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+</head>
+<body>
+    <h1>Exemplo1</h1>
+    <h2>Funções</h2>
+
+    <p>Digite o primeiro numero: </p>
+    <input type="text" id="primeiroNumero">
+    
+    <p>Digite o segundo numero: </p>
+    <input type="text" id="segundoNumero"><br>
+
+    <button onclick="calcular()">Confirmar</button>
+ 
+    <p id="resultado"></p>
+    
+    <script>
+        function calcular(){
+        
+        let numeroUm = document.getElementById("primeiroNumero").value;
+        let numeroDois = document.getElementById("segundoNumero").value;
+
+        let resultado = multiplica(numeroUm, numeroDois);
+        
+        
+        document.getElementById("resultado").innerHTML = resultado;
+
+        function multiplica(a , b) {
+            return (a * b);
+        }
+    }
+        
+    </script>
+</body>
+</html>
