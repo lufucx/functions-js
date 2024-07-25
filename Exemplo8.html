@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 7</title>
+</head>
+<body>
+    <p id="resultado"></p>
+    
+
+    <script>
+        function multiplica(...args){
+            let multiplica = 1;
+            for(let arg of args)multiplica*=arg;
+            return multiplica;
+        }
+
+        let x = multiplica(2, 4, 1, 3);
+        document.getElementById("resultado").innerHTML = x;
+    </script>
+</body>
+</html>
